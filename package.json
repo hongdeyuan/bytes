@@ -22,6 +22,8 @@
   },
   "scripts": {
     "test": "jest",
+    "test-ci": "nyc --reporter=lcov --reporter=text npm test",
+    "test-cov": "nyc --reporter=html --reporter=text npm test",
     "build": "tsc",
     "format": "prettier --write .",
     "lint": "tslint -p tsconfig.json",
