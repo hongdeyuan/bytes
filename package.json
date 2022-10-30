@@ -1,6 +1,6 @@
 {
   "name": "bytes-pro",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Utility to parse a string bytes (ex: 1 ZiB) to bytes (1.1805916207174113e+21) and vice-versa.",
   "main": "/lib/index.js",
   "types": "lib/index.d.ts",
