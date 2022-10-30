@@ -5,6 +5,7 @@
 .history
 
 # testing
+/coverage/lcov-report
 chromedriver.log
 
 
