@@ -22,28 +22,28 @@ Format the given value in bytes into a string. If the value is negative, it is k
 
 **Arguments**
 
-| Name    | Type     | Description                                     |
-| ------- | -------- | ----------------------------------------------- |
+| Name    | Type     | Description              |
+| ------- | -------- | ------------------------ |
 | value   | `number` | Number value to format or string value to parse |
 | options | `Object` | Conversion options for `format`                 |
 
 **Options**
 
-| Property           | Type                   | Description                                                                                                       |
-| ------------------ | ---------------------- | ----------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- | ---- | ---- | ---- | ---- | ---- | ------------------------------ |
-| decimalPlaces      | `number`｜`undefined`  | Maximum number of decimal places to include in output. Default value to `2`；Use with fixedDecimals: true         |
-| fixedDecimals      | `boolean`｜`undefined` | Whether to always display the maximum number of decimal places. Default value to `false`； Use with decimalPlaces |
-| thousandsSeparator | `string`｜`undefined`  | Example of values: `' '`, `','` and `'.'`... Default value to `''`. Use with toUnit                               |
-| toUnit             | "B"                    | "KB"                                                                                                              | "MB"                                                                   | "GB" | "TB" | "PB" | "EB" | "ZB" | Convert to specified byte unit |
-| unitSeparator      | `string`｜`undefined`  | Separator to use between number and unit. Default value to `''`.Use with splitUnit: false                         |
-| withoutFloat       | `boolean`｜`undefined` | Parse size without float：If it cannot be converted to integer byte value, the value displayed in B unit          |
-| splitUnit          | `boolean`              | Whether to split byte values and units                                                                            |
-| capacityBase       | `number`               | `undefined`                                                                                                       | Conversion base ，It can be set to 1024 or 1000, Default value to 1024 |
+| Property | Type | Description |
+| -------- | ---- | ----------- |
+| decimalPlaces | `number`｜`undefined` | Maximum number of decimal places to include in output. Default value to `2`；Use with fixedDecimals: true |
+| fixedDecimals | `boolean`｜`undefined` | Whether to always display the maximum number of decimal places. Default value to `false`； Use with decimalPlaces |
+| thousandsSeparator | `string`｜`undefined` | Example of values: `' '`, `','` and `'.'`... Default value to `''`. Use with toUnit |
+| toUnit | "B" ｜ "KB" ｜ "MB" ｜ "GB" ｜ "TB" ｜ "PB" ｜ "EB" ｜ "ZB" | Convert to specified byte unit |
+| unitSeparator | `string`｜`undefined` | Separator to use between number and unit. Default value to `''`.Use with splitUnit: false |
+| withoutFloat | `boolean`｜`undefined` | Parse size without float：If it cannot be converted to integer byte value, the value displayed in B unit |
+| splitUnit | `boolean` | Whether to split byte values and units |
+| capacityBase | `number` | `undefined` | Conversion base ，It can be set to 1024 or 1000, Default value to 1024 |
 
 **Returns**
 
-| Name    | Type                          | Description                                                   |
-| ------- | ----------------------------- | ------------------------------------------------------------- |
+| Name    | Type  | Description |
+| -------- | ---- | ----------- |
 | results | `string` ｜`string[]`｜`null` | Return null upon error. string value ; or string array value. |
 
 **Example**
@@ -128,11 +128,11 @@ The units are in powers of two, not ten. This means 1kib = 1024b according to th
 
 **Options**
 
-| Name         | Type      | Description |
-| ------------ | --------- | ----------- | ---------------------------------------------------------------------- |
-| convert      | `boolean` | `undefined` | Convert decimal to binary, Use With capacityBase.                      |
-| capacityBase | `number`  | `undefined` | Conversion base ，It can be set to 1024 or 1000, Default value to 1024 |
-| needUnit     | `boolean` | `undefined` | When it is true, you can use all options whose value is number         |
+| Name | Type | Description |
+| ----- | -------- | ---------------- |
+| convert | `boolean` | `undefined` | Convert decimal to binary, Use With capacityBase. |
+| capacityBase | `number` | `undefined` | Conversion base ，It can be set to 1024 or 1000, Default value to 1024 |
+| needUnit | `boolean` | `undefined` | When it is true, you can use all options whose value is number |
 
 **Returns**
 
@@ -162,17 +162,16 @@ Convert byte string to specified unit string.
 
 **Arguments**
 
-| Name         | Type     | Description           |
-| ------------ | -------- | --------------------- | --------- | ---------------------------------------------------------------------- | ---- | ---- | ---- | ---- | ------------------------------ |
-| value        | `string` | string value to parse |
-| toUnit       | "B"      | "KB"                  | "MB"      | "GB"                                                                   | "TB" | "PB" | "EB" | "ZB" | Convert to specified byte unit |
-| capacityBase | 1024     | 1000                  | undefined | Conversion base ，It can be set to 1024 or 1000, Default value to 1024 |
+| Name | Type | Description |
+| ----- | -------- | ---------------- |
+| value | `string` | string value to parse |
+| toUnit | "B" | "KB" | "MB" | "GB" | "TB" | "PB" | "EB" | "ZB" | Convert to specified byte unit |
+| capacityBase | 1024 | 1000 | undefined | Conversion base ，It can be set to 1024 or 1000, Default value to 1024 |
 
 **Returns**
 
-| Name    | Type     | Description |
-| ------- | -------- | ----------- | --------------------------- |
-| results | `string` | `null`      | Convert to byte unit string |
+| Name | Type | Description |
+| results | `string` | `null` | Convert to byte unit string |
 
 **Example**
 
