@@ -5,7 +5,6 @@
 .history
 
 # testing
-/coverage
 chromedriver.log
 
 
