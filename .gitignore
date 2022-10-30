@@ -5,7 +5,9 @@
 .history
 
 # testing
-/coverage/lcov-report
+coverage/lcov-report
+coverage/clover.xml
+coverage/coverage-final.json
 chromedriver.log
 
 
