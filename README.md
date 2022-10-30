@@ -7,13 +7,13 @@ Utility to parse a string bytes (ex: 1 ZiB) to bytes (1.1805916207174113e+21) an
 ## Installation
 
 ```bash
-$ npm install @bytes/pro ｜ yarn install @bytes/pro
+$ npm install bytes/pro ｜ yarn install bytes/pro
 ```
 
 ## Usage
 
 ```ts
-import bytes from '@bytes/pro';
+import bytes from 'bytes/pro';
 ```
 
 #### bytes.format(number value, [options]): string | string[] | null
