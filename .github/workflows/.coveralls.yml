@@ -61,13 +61,6 @@ jobs:
       - name: Lint code
         run: npm run lint
 
-      - name: Collect code coverage
-        uses: coverallsapp/github-action@master
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          flag-name: run-${{ matrix.test_number }}
-          parallel: true
-
   coverage:
     needs: test
     runs-on: ubuntu-latest
