@@ -1,5 +1,9 @@
 # Bytes utility
 
+[![Coverage Status](https://coveralls.io/repos/github/hongdeyuan/bytes-pro/badge.svg?branch=main)](https://coveralls.io/github/hongdeyuan/bytes-pro?branch=main)
+[npm-image]: https://badgen.net/npm/v/bytes-pro
+[npm-url]: https://npmjs.org/package/bytes-pro
+
 Utility to parse a string bytes (ex: 1 ZiB) to bytes (1.1805916207174113e+21) and vice-versa.
 
 ## Installation

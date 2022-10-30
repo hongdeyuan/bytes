@@ -1,5 +1,5 @@
 {
-  "name": "@bytes/pro",
+  "name": "bytes-pro",
   "version": "1.0.2",
   "description": "Utility to parse a string bytes (ex: 1 ZiB) to bytes (1.1805916207174113e+21) and vice-versa.",
   "main": "/lib/index.js",
