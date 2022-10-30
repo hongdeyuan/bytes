@@ -1,0 +1,7 @@
+# testing
+/coverage
+chromedriver.log
+
+# dependencies
+/node_modules
+.history
